@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document main*/
+@font-face{
+	font-family: "GmarketSansTTFLight";
+	src:url("GmarketSansTTF/GmarketSansTTFLight.ttf")format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+#a{
+ position:absolute;
+    left:50%;
+    transform: translate(-50%);
+	font-family:"G마켓 산스 TTF Bold", "G마켓 산스 TTF Light", "G마켓 산스 TTF Medium";
+}
+div {
+	max-width: 375px;
+	width: 100%;
+	background:#FBFAFF;
+}
+#add_back{
+	max-height: 140px;
+	height: 140px;
+	max-width: 375px;
+	width: 100%;
+	background:#FBFAFF;
+}
+#add{
+	max-height: 140px;
+	height: 140px;
+	max-width: 361px;
+	width: 361px;
+	 position:relative;
+	left: 7px; top: 13px;
+}
+table td{
+	max-width: 375px;
+	width: 375px;
+	margin: 0px; padding: 0px;
+	border-collapse: collapse;
+}
+img{
+	margin: auto;
+	padding: 0px;
+	display: block;
+}
+.btn{
+	margin: auto;
+	padding: 0px;
+	display: block;
+	width: 361px;
+	height: 80px;
+	border: none;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+		
+}
+#btn1{
+	background-image: url("1.jpg");
+}
+#btn2{
+	background-image: url("2.jpg");
+}
+#btn3{
+	background-image: url("3.jpg");
+}
+#btn4{
+	background-image: url("4.jpg");
+}
+.menu_group{
+	max-height: 400px;
+	height: 400px;
+}
+.main_menu{
+	max-height: 130px;
+	height: 130px;
+	max-width: 375px;
+	width: 375px;
+	position: relative;
+	background: #FFF7F0;
+	
+}

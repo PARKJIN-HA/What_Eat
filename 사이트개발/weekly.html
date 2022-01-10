@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>무제 문서</title>
+</head>
+
+<body>
+	<table> 
+		<php $time = time(); $week = date("w",$time); $weeks = array("일","월","화","수","목","금","토"); $sunday = mktime(0, 0, 0,date("m"),date("d") - $week,date("Y")); for ($i = 0,$day = $sunday;$i < 7; $i++, $day += 86400): $date_display = date("Y-m-d (D)",$day); $day_display = $weeks[date("w",$day)]; >
+		<tr> <td bgcolor='#fffff0'>
+			<=$day_display></td> <td><a href="#"><?=$date_display?></a></td> <td>일정내용</a></td> </tr> <php endfor; > </table>
+
+</body>
+</html>

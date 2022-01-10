@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>레시피</title>
+<link rel="stylesheet" type="text/css" href="recipe.css">
+</head>
+<body>
+	<div id="a">
+	<header>
+		  <div class="main_menu">
+			<table class="main_menu">
+				<td id="m"><button class="openbtn" onclick="openNav()">☰</button> </td>
+				<td>
+				<span id="date"></span><br>
+				<span style="padding-top: 30px; font-size: 31px;">레시피</span>
+				</td>
+			</table>
+		  </div>
+		<div id="mySidebar" class="sidebar">
+  			<div style="background:#FFF7F0;padding-top:0px">
+			<img src="하루식사_로고.png" alt="로고" width="170px" height="120px" style="position: relative; left: 35px; top: -30px;">
+			</div>
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  			<a class="sidemenu" href="하루식사.html">처음 화면</a>
+  			<a class="sidemenu" href="everymenu.html">매일 세끼</a>
+  			<a class="sidemenu" href="everymenu2.html">이색 세끼</a>
+  			<a class="sidemenu" href="special.html">특별 한끼</a>
+			<a class="sidemenu" href="story.html">하루식사 이야기</a>
+		</div>
+	</header>
+	<article>
+		<div class="menu_group">
+		
+		</div>
+	</article>
+	</div>
+<script type="text/javascript">
+		todayIs();
+ 		
+		function todayIs() {
+        var today = new Date();
+        var dd = today.getDate();
+        var mm = today.getMonth()+1; // Jan is 0
+		
+        today =mm + '월 ' + dd + '일';
+        //alert(today);
+        document.getElementById("date").innerHTML = today;
+        //$('#date').text(today);
+    } 
+</script>
+<script>
+
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+</body>
+</html>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>레시피</title>
+</head>
+
+<body>
+</body>
+</html>

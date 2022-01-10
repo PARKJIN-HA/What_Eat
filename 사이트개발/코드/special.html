@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>특별 한끼</title>
+<link rel="stylesheet" type="text/css" href="special.css">
+</head>
+<body>
+	<div id="a">
+	<header>
+		  <div class="main_menu">
+			<table class="main_menu">
+				<td id="m"><button class="openbtn" onclick="openNav()">☰</button> </td>
+				<td>
+				<span id="date"></span><br>
+				<span style="padding-top: 30px; font-size: 31px;">특별 한끼</span>
+				</td>
+			</table>
+		  </div>
+		<div id="mySidebar" class="sidebar">
+  			<div style="background:#FFF7F0;padding-top:0px">
+			<img src="하루식사_로고.png" alt="로고" width="170px" height="120px" style="position: relative; left: 35px; top: -30px;">
+			</div>
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  			<a class="sidemenu" href="하루식사.html">처음 화면</a>
+  			<a class="sidemenu" href="everymenu.html">매일 세끼</a>
+  			<a class="sidemenu" href="everymenu2.html">이색 세끼</a>
+  			<a class="sidemenu" href="special.html">특별 한끼</a>
+			<a class="sidemenu" href="story.html">하루식사 이야기</a>
+		</div>
+	</header>
+	<article>
+		<div class="menu_group">
+			<table class="mm">
+			<tr><td background="밀푀유나베.jpg" id="menu"></td></tr>
+			<tr><td>
+				<p style="margin: 3px;padding: 0px;">더워서 지치는 요즘 뜨끈한 소고기 국물로 <br>몸보신 어때요?</p><br>
+				<p style="font-size: 45px; padding: 0px;margin: 3px; line-height: 80%;font-weight: bold;">밀푀유나베</p>				
+				</td></tr>
+			</table><br>
+			<table>
+						<tr><td width="12px">
+							<button class="herfbtn"><a href="https://www.fresheasy.co.kr/goods/view?no=145">재료 사기</a></button>
+						</td></tr>
+						<tr><td width="12px">
+							<button class="herfbtn"><a href="https://terms.naver.com/entry.nhn?docId=5645871&cid=42785&categoryId=60402">레시피</a></button>
+						</td></tr>
+						<tr><td width="12px">
+							<button class="herfbtn">
+								<a href="https://terms.naver.com/entry.nhn?docId=2724077&cid=43667&categoryId=43667">요리 소개</a></button>
+						</td></tr>
+			</table>
+		</div>
+	</article>
+	</div>
+<script type="text/javascript">
+		todayIs();
+ 		
+		function todayIs() {
+        var today = new Date();
+        var dd = today.getDate();
+        var mm = today.getMonth()+1; // Jan is 0
+		
+        today =mm + '월 ' + dd + '일';
+        //alert(today);
+        document.getElementById("date").innerHTML = today;
+        //$('#date').text(today);
+    } 
+</script>
+<script>
+
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+</body>
+</html>
